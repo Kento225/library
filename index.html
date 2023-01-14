@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="modal">
+        <div class="modal-content">
+            <form>
+                <label for="bname">Name</label>
+                    <input type="text" id ="bname" name="book-name">
+                <label for="bauthor">Author</label>
+                    <input type="text" id="bauthor" name="book-author">
+                <label for="bpages">Pages</label>
+                    <input type="number" id="bpages" name="book-pages">
+                <div class="modal-buttons">
+                    <button class="modal-submit">Submit</button>
+                    <button class="modal-close">Close</button>
+                </div>
+                <div class="checkbox">
+                    <label for="bread">Have you read it?</label>
+                    <input type="checkbox" id="bread" name="book-read">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="header">
+        <button class="add-book">New book</button>
+    </div>
+    <div class="card-container"></div>
+    
+</body>
+</html>
