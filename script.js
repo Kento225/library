@@ -58,11 +58,13 @@ const createBookCard = function (name, author, pages) {
   });
 };
 
-const Book = function (name, author, pages) {
-  this.name = name;
-  this.author = author;
-  this.pages = pages;
-};
+class Book {
+  constructor(name, author, pages) {
+    this.name = name;
+    this.author = author;
+    this.pages = pages;
+  }
+}
 btnModalSubmit.addEventListener("click", (e) => {
   e.preventDefault();
   const newBook = new Book(bname.value, bauthor.value, bpages.value);
